@@ -1,0 +1,6 @@
+.idea/
+tests/allure-results/
+tests/target/
+node_modules/
+tests/**/*.js
+tests/**/*.map

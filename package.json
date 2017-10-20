@@ -1,0 +1,21 @@
+{
+  "name": "NCT_task",
+  "version": "0.1.0",
+  "scripts": {
+    "webdriver-update": "webdriver-manager update --versions.chrome 2.33",
+    "postinstall": "npm run webdriver-update",
+    "test": "./node_modules/.bin/protractor tests/protractor.conf.js",
+    "tsc": "npm run tsc"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^2.5.38",
+    "@types/node": "^6.0.60",
+    "@types/selenium-webdriver": "^3.0.1",
+    "jasmine-allure-reporter": "^1.0.1",
+    "jasmine-core": "^2.3.4",
+    "protractor": "^5.0.0",
+    "randomstring": "^1.1.5",
+    "ts-node": "^3.0.2",
+    "typescript": "^2.2.0"
+  }
+}
