@@ -6,11 +6,12 @@ let dashboard: Dashboard = new Dashboard();
 let employersList: EmployersList = new EmployersList();
 let employer: Employer = new Employer();
 let isPageOpened = false;
+let data = require('../test_data/data.json')['employer.navBar.searchPad.spec'];
 
-const SEARCH_TYPE = 'Компании';
-const DEFAULT_PLACEHOLDER = 'Я ищу…';
-const COMPANY_NAME_PART: string = 'новые облачные';
-const COMPANY_NAME: string = 'Новые Облачные Технологии';
+const SEARCH_TYPE: string = data['SEARCH_TYPE'];
+const DEFAULT_PLACEHOLDER: string = data['DEFAULT_PLACEHOLDER'];
+const COMPANY_NAME_PART: string = data['COMPANY_NAME_PART'];
+const COMPANY_NAME: string = data['COMPANY_NAME'];
 
 
 describe('Employer page. Employers List Table: ', () => {

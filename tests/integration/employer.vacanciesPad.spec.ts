@@ -6,10 +6,11 @@ let dashboard: Dashboard = new Dashboard();
 let employersList: EmployersList = new EmployersList();
 let employer: Employer = new Employer();
 let isPageOpened = false;
+let data = require('../test_data/data.json')['employer.vacanciesPad.spec'];
 
-const SEARCH_TYPE = 'Компании';
-const COMPANY_NAME_PART: string = 'новые облачные';
-const COMPANY_NAME: string = 'Новые Облачные Технологии';
+const SEARCH_TYPE: string = data['SEARCH_TYPE'];
+const COMPANY_NAME_PART: string = data['COMPANY_NAME_PART'];
+const COMPANY_NAME: string = data['COMPANY_NAME'];
 
 
 describe('Employer page. Vacancies Pad: ', () => {

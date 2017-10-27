@@ -3,10 +3,11 @@ import EmployersList from "../common/pages/EmployersList";
 
 let dashboard: Dashboard = new Dashboard();
 let employersList: EmployersList = new EmployersList();
+let data = require('../test_data/data.json')['companyPageRedirection.spec'];
 
-const COMPANY_NAME: string = 'Новые Облачные Технологии';
-const COMPANY_NAME_PART: string = 'новые облачные';
-const RESULT_COUNT: number = 1;
+const COMPANY_NAME: string = data['COMPANY_NAME'];
+const COMPANY_NAME_PART: string = data['COMPANY_NAME_PART'];
+const RESULT_COUNT: number = data['RESULT_COUNT'];
 
 describe('Redirection to the selected in dropdown company page feature:', () => {
     beforeEach(() => {

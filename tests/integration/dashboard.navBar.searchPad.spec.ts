@@ -2,13 +2,14 @@ import Dashboard from "../common/pages/Dashboard";
 
 let dashboard: Dashboard = new Dashboard();
 let isPageOpened = false;
+let data = require('../test_data/data.json')['dashboard.navBar.searchPad.spec'];
 
-const DEFAULT_SEARCH_TYPE = 'Вакансии';
-const DEFAULT_PLACEHOLDER = 'Я ищу…';
+const DEFAULT_SEARCH_TYPE = data['DEFAULT_SEARCH_TYPE'];
+const DEFAULT_PLACEHOLDER = data['DEFAULT_PLACEHOLDER'];
 
 
 describe('Dashboard page. Navigation bar. Search pad:', () => {
-    beforeEach(() => {
+    beforeEach(() => {   //cannot use beforeAll due to allure issue
         if (!isPageOpened) {
             dashboard.pageOperations.open();
             dashboard.pageOperations.expectIsLoaded();

@@ -4,10 +4,11 @@ import EmployersList from "../common/pages/EmployersList";
 let dashboard: Dashboard = new Dashboard();
 let employersList: EmployersList = new EmployersList();
 let isPageOpened = false;
+let data = require('../test_data/data.json')['employersList.navBar.searchPad.spec'];
 
-const SEARCH_TYPE = 'Компании';
-const DEFAULT_PLACEHOLDER = 'Я ищу…';
-const COMPANY_NAME_PART: string = 'новые облачные';
+const SEARCH_TYPE: string = data['SEARCH_TYPE'];
+const DEFAULT_PLACEHOLDER: string = data['DEFAULT_PLACEHOLDER'];
+const COMPANY_NAME_PART: string = data['COMPANY_NAME_PART'];
 
 
 describe('Employers List page. Employers List Table: ', () => {

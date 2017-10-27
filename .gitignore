@@ -1,7 +1,7 @@
 .idea/
 tests/target/
 node_modules/
-tests/**/*.js
+tests/*/*.js
 tests/**/*.map
 allure-results/
 npm-debug.log

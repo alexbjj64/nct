@@ -19,7 +19,7 @@ mvn 3.2.3
 npm install
 
 # run tests
-npm run tests
+npm run test
 
 # build report
 mvn site -Dallure.results_pattern=allure-results

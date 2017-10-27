@@ -1,0 +1,52 @@
+{
+  "autocomplete.spec": {
+    "COMPANY_NAME": "Новые Облачные Технологии",
+    "COMPANY_NAME_PART": "новые облачные",
+    "RESULT_COUNT": 1,
+    "VACANCIES_TYPE": "Вакансии",
+    "COMPANIES_TYPE": "Компании"
+  },
+  "companyPageRedirection.spec": {
+    "COMPANY_NAME": "Новые Облачные Технологии",
+    "COMPANY_NAME_PART": "новые облачные",
+    "RESULT_COUNT": 1
+  },
+  "regionVacancies.spec": {
+    "COMPANY_NAME": "Новые Облачные Технологии",
+    "COMPANY_NAME_PART": "новые облачные",
+    "VACANCIES_COUNT": 9,
+    "VACANCY": "QA Automation Engineer",
+    "COMPANIES_TYPE": "Компании"
+  },
+  "dashboard.navBar.searchPad.spec": {
+    "DEFAULT_SEARCH_TYPE": "Вакансии",
+    "DEFAULT_PLACEHOLDER": "Я ищу…"
+  },
+  "employer.employerInfoPad.spec": {
+    "SEARCH_TYPE": "Компании",
+    "COMPANY_NAME_PART": "новые облачные",
+    "COMPANY_NAME": "Новые Облачные Технологии",
+    "HEADER": "Новые Облачные Технологии "
+  },
+  "employer.navBar.searchPad.spec": {
+    "SEARCH_TYPE": "Компании",
+    "DEFAULT_PLACEHOLDER": "Я ищу…",
+    "COMPANY_NAME_PART": "новые облачные",
+    "COMPANY_NAME": "Новые Облачные Технологии"
+  },
+  "employer.vacanciesPad.spec": {
+    "SEARCH_TYPE": "Компании",
+    "COMPANY_NAME_PART": "новые облачные",
+    "COMPANY_NAME": "Новые Облачные Технологии"
+  },
+  "employersList.employersListTable.spec": {
+    "COMPANY_NAME_PART": "новые облачные",
+    "COMPANIES_TYPE": "Компании"
+  },
+  "employersList.navBar.searchPad.spec": {
+    "SEARCH_TYPE": "Компании",
+    "DEFAULT_PLACEHOLDER": "Я ищу…",
+    "COMPANY_NAME_PART": "новые облачные"
+  }
+}
+
