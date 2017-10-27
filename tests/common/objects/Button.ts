@@ -11,6 +11,7 @@ export default class SelectorButton extends Element {
     }
 
     public click(): void {
+        this.expectIsClickable();
         commonActions.click(this.element, this.LOGNAME)
     }
 }

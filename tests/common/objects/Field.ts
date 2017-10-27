@@ -11,6 +11,7 @@ export default class Field extends Element {
     }
 
     public sendKeys(text: string): void {
+        this.expectIsClickable();
         commonActions.sendKeys(this.element, this.LOGNAME, text);
     };
 

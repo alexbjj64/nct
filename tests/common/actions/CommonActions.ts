@@ -1,6 +1,6 @@
-import {browser, protractor, ElementFinder} from "protractor";
+import {browser, protractor, ElementFinder, ElementArrayFinder} from "protractor";
 let condition = protractor.ExpectedConditions;
-let DEFAULT_CONDITION_TIMEOUT = 10000;
+let DEFAULT_CONDITION_TIMEOUT = 30000;
 
 declare const allure: {
     _allure;
@@ -90,16 +90,24 @@ export default class CommonActions {
         expect(browser.getCurrentUrl()).toEqual(url, logName + ' is not loaded');
     }
 
-    public  isConsoleHasNoErrors() {
-        browser.manage().logs().get('browser').then((browserLog) => {
-            expect(browserLog.length).toEqual(0, 'Console has errors: ' + JSON.stringify(browserLog));
-        });
+    public isUrlContains(url: string, logName: string): void {
+        expect(browser.getCurrentUrl()).toContain(url, logName + ' is not loaded');
     }
 
     public isPlaceholderEquals(element: ElementFinder, placeholder: string, logName: string) {
         expect(element.getAttribute('placeholder')).toEqual(placeholder, logName + ' has incorrect value');
     }
 
+    public isElementsCountEqualTo(elementsList: ElementArrayFinder, expectedCount: number, logName: string) {
+        elementsList.count()
+            .then((actualCount) => {
+                expect(actualCount).toEqual(expectedCount, logName + ' has incorrect count of results');
+            });
+    }
+
+    public isElementsCountGreaterThan(elementsList: ElementFinder[], expectedCount: number, logName: string) {
+        expect(elementsList.length).toBeGreaterThan(expectedCount, logName + ' has count of results not greater than: ' + expectedCount);
+    }
     // </editor-fold>
 
     // <editor-fold defaultstate="collapsed" desc="waits">

@@ -43,6 +43,12 @@ export default class Element {
         commonActions.log('Correctness of ' + this.LOGNAME + ' has been checked');
     }
 
+    public expectIsValueCorrect(text: string): void {
+        this.waitUntilIsVisible();
+        this.isValueEquals(text);
+        commonActions.log('Value of ' + this.LOGNAME + ' has been checked');
+    }
+
     public expectIsPresent(): void {
         this.waitUntilIsPresent();
         this.isPresent();
@@ -105,5 +111,9 @@ export default class Element {
 
     private isTextContainsCaseInsensitive(text: string): void {
         commonActions.isTextContainsCaseInsensitive(this.element, text, this.LOGNAME);
+    }
+
+    private isValueEquals(text: string): void {
+        commonActions.isValueEquals(this.element, text, this.LOGNAME);
     }
 }

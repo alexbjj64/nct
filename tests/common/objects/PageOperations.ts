@@ -12,16 +12,16 @@ export default class PageOperations {
         this.LOGNAME = LOGNAME;
     }
 
-    public  open(): void {
+    public open(): void {
         commonActions.openPage(this.URL, this.LOGNAME);
     };
 
-    public  refresh(): void {
+    public refresh(): void {
         commonActions.refreshPage(this.LOGNAME);
     };
 
-    public  expectIsLoaded() {
-        commonActions.isUrlEquals(this.URL, this.LOGNAME);
-        commonActions.log(this.LOGNAME + ' pageOperations with URL ' + this.URL + ' has been loaded');
+    public expectIsLoaded() {
+        commonActions.isUrlContains(this.URL, this.LOGNAME);
+        commonActions.log(this.LOGNAME + ' page with URL ' + this.URL + ' has been loaded');
     };
 }
